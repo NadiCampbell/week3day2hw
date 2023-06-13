@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>{{title}} - GameShop Order</title>
+</head>
+<body>
+  <div class="order-details-wrapper">
+    <h2>
+        {{order.name}}, here is your order:
+    </h2>
+    <hr>
+        <p>You have selected = {{order.game}}</p>
+        <br>
+        <p>Date of your order = {{order.order_date}}</p>
+        <br>
+        <p>Quantity = {{order.quantity}}</p>
+        <br>
+        <a class="cta" href="/orders">Back</a>
+
+  </div>
+</body>
+</html>
